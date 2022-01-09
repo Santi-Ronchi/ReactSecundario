@@ -3,7 +3,9 @@ import './App.css';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import ItemDetailContainer from './Components/ItemDetailContainer';
 import ItemListContainer from './Components/ItemListContainer';
-import NavBar from './Components/NavBar'
+import NavBar from './Components/NavBar';
+import Cart from './Components/Cart'
+
 import './estructura.scss'
 
 
@@ -23,7 +25,7 @@ function App() {
           />
 
           <Route path="/product/:itemId" element={<ItemDetailContainer />} />
-
+          <Route path="/cart" element={<Cart/>} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
