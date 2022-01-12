@@ -330,6 +330,13 @@ section {
 
 .flex-box {
 	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center
+}
+
+.flex-box-detail{
+	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center
